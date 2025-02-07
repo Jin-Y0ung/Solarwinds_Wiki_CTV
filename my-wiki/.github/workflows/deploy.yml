@@ -20,8 +20,19 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build website
-        run: yarn build
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ACTIONS_DEPLOY_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "jkim3670@gatech.edu"
+          git config --global user.name "JinYoung Kim"
 
       - name: Deploy to GitHub Pages
-        run: GIT_USER=${{ secrets.GITHUB_ACTOR }} yarn deploy
+        env:
+          USE_SSH: true
+        run: yarn deploy
