@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  
 
 jobs:
   deploy:
@@ -31,6 +31,9 @@ jobs:
         run: |
           git config --global user.email "jkim3670@gatech.edu"
           git config --global user.name "JinYoung Kim"
+
+      - name: Build website
+        run: yarn build
 
       - name: Deploy to GitHub Pages
         env:
