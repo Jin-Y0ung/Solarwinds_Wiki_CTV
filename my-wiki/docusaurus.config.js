@@ -47,7 +47,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/qcells_logo.png',
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Solarwinds Wiki',
         logo: {
