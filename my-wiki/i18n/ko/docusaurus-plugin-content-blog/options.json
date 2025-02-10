@@ -1,0 +1,12 @@
+{
+  "blogTitle": { "message": "블로그" },
+  "blogDescription": { "message": "SolarWinds 위키의 최신 소식을 확인하세요." },
+  "blogSidebarTitle": { "message": "모든 게시글" },
+  "blogSidebarCount": { "message": "모든 게시글 {count}개" },
+  "recentPostsTitle": { "message": "최근 게시글" },
+  "tagsListTitle": { "message": "태그 목록" },
+  "postAuthor": { "message": "작성자" },
+  "postDate": { "message": "{date}에 게시됨" },
+  "readMore": { "message": "더 읽기" },
+  "noTagsFound": { "message": "태그가 없습니다." }
+}

@@ -1,47 +1,44 @@
 ---
-sidebar_position: 1
+id: intro
+title: Getting Started
+slug: /intro
 ---
 
-# Tutorial Intro
+# Getting Started 🚀
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the **SolarWinds Qcells NMS Documentation**!  
+This guide provides an overview of how to access and utilize the SolarWinds systems deployed at Qcells.
 
-## Getting Started
+---
 
-Get started by **creating a new site**.
+## **🌐 Accessing SolarWinds Qcells NMS**
+The **SolarWinds Network Management System (NMS)** for Qcells can be accessed via the following URL:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+🔗 [SolarWinds Qcells NMS](https://10.204.42.7)
 
-### What you'll need
+This system allows you to:
+- Monitor and manage network infrastructure.
+- View performance metrics and real-time alerts.
+- Troubleshoot network issues with in-depth diagnostics.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+---
 
-## Generate a new site
+## **🔹 Accessing SolarWinds Qcells DPA**
+The **Database Performance Analyzer (DPA)** can be accessed via the following URL:
 
-Generate a new Docusaurus site using the **classic template**.
+🔗 [SolarWinds Qcells DPA](https://10.204.42.7:8124)
 
-The classic template will automatically be added to your project after you run the command:
+Features of DPA:
+- Analyze and optimize database performance.
+- Monitor slow queries and system load.
+- Improve overall database efficiency.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+---
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## **🛠 Next Steps**
+To get started with SolarWinds Qcells systems:
+1. Ensure you have the appropriate access credentials.
+2. Log in using the provided URLs.
+3. Refer to the documentation for **detailed monitoring and troubleshooting steps**.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+🔗 **Related Docs:**

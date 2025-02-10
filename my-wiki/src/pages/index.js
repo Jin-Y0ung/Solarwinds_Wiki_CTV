@@ -14,7 +14,7 @@ export default function Home() {
       <main className={styles.mainContent}>
         <div className={styles.sidebar}>
           <ul>
-            <li><a href="/docs/intro">Getting Started</a></li>
+            <li><a href="/Solarwinds_Wiki_CTV/docs/intro">Getting Started</a></li>
             <li><a href="/docs/guides">Guides</a></li>
             <li><a href="/docs/reference">CLI Reference</a></li>
             <li><a href="/docs/clients">Clients</a></li>
