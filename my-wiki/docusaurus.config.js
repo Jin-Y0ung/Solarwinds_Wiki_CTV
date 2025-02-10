@@ -56,13 +56,6 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          {
             href: 'https://github.com/Jin-Y0ung/Solarwinds_Wiki_CTV',
             label: 'GitHub',
             position: 'right',
@@ -71,43 +64,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Introduction',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'GitHub Discussions',
-                href: 'https://github.com/Jin-Y0ung/Solarwinds_Wiki_CTV/discussions',
-              },
-              {
-                label: 'Issues',
-                href: 'https://github.com/Jin-Y0ung/Solarwinds_Wiki_CTV/issues',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Jin-Y0ung/Solarwinds_Wiki_CTV',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} Solarwinds Wiki. Built with Docusaurus.`,
       },
       prism: {
