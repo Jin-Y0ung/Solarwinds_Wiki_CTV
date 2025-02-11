@@ -9,7 +9,7 @@ slug: /intro
 Welcome to the **SolarWinds Qcells NMS Documentation**!  
 This guide provides an overview of how to access and utilize the SolarWinds systems deployed at Qcells.
 
-Please contact jinyoung.kim1@qcells.com to retrive your account information or generate new account. 
+Please contact **jinyoung.kim1@qcells.com** to retrive your account information or generate new account. 
 
 ---
 
