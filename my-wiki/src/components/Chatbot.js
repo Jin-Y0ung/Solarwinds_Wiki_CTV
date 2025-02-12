@@ -9,8 +9,13 @@ const Chatbot = () => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    fetch('/content.json')
-      .then(response => response.json())
+    fetch('/Solarwinds_wiki_CTV/content.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then(data => {
         setArticles(data);
         console.log('Articles loaded:', data.length);
