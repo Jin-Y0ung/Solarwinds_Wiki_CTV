@@ -14,7 +14,10 @@ const config = {
   // GitHub Pages 배포를 위한 설정
   organizationName: 'Jin-Y0ung', 
   projectName: 'Solarwinds_Wiki_CTV', // GitHub 저장소 이름
+  trailingSlash: false,
   deploymentBranch: 'gh-pages', // GitHub Pages 배포 브랜치
+
+  plugins: [require.resolve('docusaurus-lunr-search')],
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
