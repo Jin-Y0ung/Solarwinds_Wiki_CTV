@@ -22,8 +22,11 @@ def get_content(directory):
                             except yaml.YAMLError as e:
                                 print(f"Warning: Unable to parse frontmatter in {file}: {e}")
 
-                        # Use 'title' from frontmatter if available
-                        title = frontmatter.get('title', os.path.splitext(file)[0])
+                        # Ensure title is extracted correctly
+                        title = frontmatter.get('title')  # Use title from frontmatter
+                        if not title:
+                            title_match = re.search(r'^#\s+(.+)$', md_content, re.MULTILINE)  # Check first H1 heading
+                            title = title_match.group(1) if title_match else os.path.splitext(file)[0]  # Use filename as fallback
 
                         # Remove frontmatter from content
                         md_content = re.sub(r'^---\s*\n.*?\n---\s*\n', '', md_content, flags=re.DOTALL)
@@ -31,14 +34,14 @@ def get_content(directory):
                         # Convert Markdown to HTML
                         html_content = markdown.markdown(md_content)
 
-                        # Generate URL
-                        url = '/docs/' + os.path.relpath(os.path.join(root, file), directory).replace('\\', '/')
+                        # Generate URL (adjust for correct path)
+                        url = '/Solarwinds_Wiki_CTV/docs/' + os.path.relpath(os.path.join(root, file), directory).replace('\\', '/')
                         url = os.path.splitext(url)[0]  # Remove file extension
                         if url.endswith('/index'):
                             url = url[:-5]  # Remove 'index' from the end of the URL
 
                         content.append({
-                            'title': title,
+                            'title': title,  # Ensure title is set correctly
                             'content': html_content,
                             'url': url
                         })
