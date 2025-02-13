@@ -9,7 +9,7 @@ const Chatbot = () => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    fetch('./static/content.json')
+    fetch('/Solarwinds_Wiki_CTV/content.json')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
