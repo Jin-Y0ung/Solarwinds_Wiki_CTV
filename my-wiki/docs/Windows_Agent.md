@@ -4,8 +4,6 @@ title: Windows Agent Installation
 slug: /windows_agent
 ---
 
-# SolarWinds Windows Agent Installation
-
 ## Step 1: Open the Web Browser
 ![login](\windows_install\login.png)
 1. Go to [SolarWinds Agent Download Page](http://10.204.42.7/Orion/AgentManagement/Admin/DownloadAgent.aspx).

@@ -72,8 +72,17 @@ const sidebars = {
           label: 'How to register equipment ',
         },{
           type: 'doc',
-          id: 'system_description', 
-          label: 'How to Register Equipment',
+          id: 'edit_map', 
+          label: 'How to edit map',
+        },{
+          type: 'doc',
+          id: 'add_application_sam', 
+          label: 'How to Add an Application to SAM',
+        },
+        {
+          type: 'doc',
+          id: 'add_db_dpa', 
+          label: 'How to Add a Database to DPA',
         },
       ],
     },

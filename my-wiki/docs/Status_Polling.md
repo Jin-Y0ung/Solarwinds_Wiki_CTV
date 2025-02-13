@@ -3,7 +3,7 @@ id: status_polling
 title: Status Polling Interval Settings
 slug: /status_polling
 ---
-### **Status Polling Interval Setup**  
+
 
 #### **1. Navigate to Polling Settings**
 ![polling](\polling_interval\1.png)

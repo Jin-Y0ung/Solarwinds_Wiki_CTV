@@ -4,7 +4,6 @@ title: Individual Node Polling Interval Setup
 slug: /Individual_Node_Polling
 ---
 
-### **Individual Node Polling Interval Setup Guide**  
 
 #### **1. Navigate to Node Management**  
 ![polling](\polling_interval\i1.png)  

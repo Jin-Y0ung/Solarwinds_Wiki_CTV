@@ -4,8 +4,6 @@ title: Each Individual Partition Polling Interval Setup
 slug: /ind_partition_polling
 ---
 
-### **Individual Partition Polling Interval Setup Guide**  
-
 #### **1. Navigate to Partition Management**  
 ![polling](\ind_partition_polling\1.png)  
 1. **Navigate to the Top Menu**  

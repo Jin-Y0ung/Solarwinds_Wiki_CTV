@@ -4,7 +4,6 @@ title: System Description
 slug: /system_description
 ---
 
-### **System Description**  
 
 #### **NPM (Network Performance Monitor)**  
 SolarWinds **Network Performance Monitor (NPM)** is a powerful network monitoring solution designed to provide comprehensive visibility and performance insights for IT professionals managing complex network environments.  

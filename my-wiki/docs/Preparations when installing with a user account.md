@@ -4,7 +4,6 @@ id: preperations
 slug: /preperations
 ---
 
-# Preparations when installing with a user account
 
 When installing with a user account, be sure to add it to the **wheel group**. This ensures that the user has the necessary administrative privileges.
 

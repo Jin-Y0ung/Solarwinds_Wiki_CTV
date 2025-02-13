@@ -4,8 +4,6 @@ title: Getting Started
 slug: /intro
 ---
 
-# Getting Started 🚀
-
 Welcome to the **SolarWinds Qcells NMS Documentation**!  
 This guide provides an overview of how to access and utilize the SolarWinds systems deployed at Qcells.
 

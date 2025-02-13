@@ -4,8 +4,6 @@ title: How to Edit a Map
 slug: /edit_map
 ---
 
-### **How to Edit a Map**  
-
 #### **1. Open the Maps Interface**  
 ![edit_map](\edit_map\1.png)  
 - Click the **"Maps"** button from the main menu.  

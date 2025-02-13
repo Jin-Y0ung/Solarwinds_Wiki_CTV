@@ -4,7 +4,6 @@ title: Linux Agent Installation
 slug: /Linux_agent
 ---
 
-# Linux Agent Installation  
 ![login](\windows_install\login.png)
 1. Open the Web Browser on your Desktop or Laptop.  
 2. Access `http://10.204.42.7/Orion/AgentManagement/Admin/DownloadAgent.aspx`.  

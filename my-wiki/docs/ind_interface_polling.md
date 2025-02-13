@@ -4,8 +4,6 @@ title: Individual Interface Polling Interval Setup
 slug: /ind_interface_polling
 ---
 
-### **Each Individual Interface Polling Interval Setup Guide**  
-
 #### **1. Navigate to Interface Management**  
 ![polling](\ind_interface_polling\1.png)  
 1. **Navigate to the Top Menu**  

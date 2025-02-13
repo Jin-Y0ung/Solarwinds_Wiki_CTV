@@ -4,9 +4,7 @@ title: How to Register Equipment
 slug: /register_equipment
 ---
 
-### **How to Register Equipment**  
-
-#### **1. Navigate to Node Management**  
+#### **1. Navigate to Node Management**  git pu
 ![register](\register_equipment\1.png)  
 1. **Navigate to the Top Menu**
 2. Click the **"Manage Nodes"** button  
