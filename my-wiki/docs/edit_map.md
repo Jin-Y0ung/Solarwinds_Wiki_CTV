@@ -2,7 +2,6 @@
 id: edit_map
 title: How to Edit a Map
 slug: /edit_map
-```
 ---
 
 ### **How to Edit a Map**  

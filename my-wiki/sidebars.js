@@ -71,7 +71,7 @@ const sidebars = {
           id: 'register_equipment', 
           label: 'How to register equipment ',
         },{
-          type: 'doc',vvvvv
+          type: 'doc',
           id: 'system_description', 
           label: 'How to Register Equipment',
         },
