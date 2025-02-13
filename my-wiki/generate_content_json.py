@@ -2,6 +2,7 @@ import os
 import json
 import markdown
 import re
+import yaml  # Use PyYAML for parsing frontmatter
 
 def get_content(directory):
     content = []
@@ -12,21 +13,25 @@ def get_content(directory):
                     with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
                         md_content = f.read()
 
-                        # Extract title from the first H1 heading
-                        title_match = re.search(r'^#\s+(.+)$', md_content, re.MULTILINE)
-                        if title_match:
-                            title = title_match.group(1)
-                        else:
-                            # Fallback to frontmatter title if H1 is not found
-                            frontmatter_title_match = re.search(r'^---\s*\ntitle:\s*(.+?)\s*\n', md_content, re.MULTILINE)
-                            title = frontmatter_title_match.group(1) if frontmatter_title_match else os.path.splitext(file)[0]
+                        # Extract frontmatter using regex
+                        frontmatter_match = re.match(r'^---\s*\n(.*?)\n---\s*\n', md_content, re.DOTALL)
+                        frontmatter = {}
+                        if frontmatter_match:
+                            try:
+                                frontmatter = yaml.safe_load(frontmatter_match.group(1))
+                            except yaml.YAMLError as e:
+                                print(f"Warning: Unable to parse frontmatter in {file}: {e}")
 
-                        # Remove frontmatter
+                        # Use 'title' from frontmatter if available
+                        title = frontmatter.get('title', os.path.splitext(file)[0])
+
+                        # Remove frontmatter from content
                         md_content = re.sub(r'^---\s*\n.*?\n---\s*\n', '', md_content, flags=re.DOTALL)
 
+                        # Convert Markdown to HTML
                         html_content = markdown.markdown(md_content)
 
-                        # Generate URL with '/docs/' prefix
+                        # Generate URL
                         url = '/docs/' + os.path.relpath(os.path.join(root, file), directory).replace('\\', '/')
                         url = os.path.splitext(url)[0]  # Remove file extension
                         if url.endswith('/index'):
