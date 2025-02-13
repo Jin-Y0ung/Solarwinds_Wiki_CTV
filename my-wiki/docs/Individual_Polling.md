@@ -1,7 +1,7 @@
 ---
-id: Individual_Polling
+id: Individual_Node_Polling
 title: Individual Node Polling Interval Setup
-slug: /Individual_Polling
+slug: /Individual_Node_Polling
 ---
 
 ### **Individual Node Polling Interval Setup Guide**  
@@ -15,7 +15,7 @@ slug: /Individual_Polling
 ![polling](\polling_interval\i2.png)  
 1. Check the **checkbox** for the node you want to modify  
 2. Click the **"Edit Properties"** button  
-
+RUN
 #### **3. Configure Node Polling Intervals**  
 ![polling](\polling_interval\i3.png)  
 - **Node Status Polling**: Minimum value is **10 seconds**  

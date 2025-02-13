@@ -32,18 +32,48 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Data Polling Interval', // Installation과 같은 레벨의 큰 분류
+      label: 'Polling Interval', // Installation과 같은 레벨의 큰 분류
       collapsed: false,
       items: [
         {
           type: 'doc',
-          id: 'status_polling', // 예시 문서 (원하는 문서 추가 가능)
+          id: 'status_polling', 
           label: 'Status Polling Interval Settings',
         },
         {
           type: 'doc',
-          id: 'Individual_Polling', // 예시 문서 (원하는 문서 추가 가능)
+          id: 'Individual_Node_Polling', 
           label: 'Individual Node Polling Interval Settings',
+        },
+        {
+          type: 'doc',
+          id: 'ind_interface_polling', 
+          label: 'Individual Interface Polling Interval',
+        },
+        {
+          type: 'doc',
+          id: 'ind_partition_polling', 
+          label: 'Individual Partition Polling Interval',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'NMS Main Functions', // Installation과 같은 레벨의 큰 분류
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'system_description', 
+          label: 'System Description',
+        },{
+          type: 'doc',
+          id: 'register_equipment', 
+          label: 'How to register equipment ',
+        },{
+          type: 'doc',vvvvv
+          id: 'system_description', 
+          label: 'How to Register Equipment',
         },
       ],
     },
