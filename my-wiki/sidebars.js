@@ -85,6 +85,41 @@ const sidebars = {
           label: 'How to Add a Database to DPA',
         },
       ],
+    },{
+      type: 'category',
+      label: 'DPA Oracle Instance', // Installation과 같은 레벨의 큰 분류
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'create_monitoring_user_auto', 
+          label: 'Create Monitoring User Automatically',
+        },{
+          type: 'doc',
+          id: 'create_monitoring_user_manual', 
+          label: 'Manually Creating a Monitoring User',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Telegram message', // Installation과 같은 레벨의 큰 분류
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'open_groupchat_obtain_id', 
+          label: 'How to Open a Group Chat & Obtain Chat IDy',
+        },{
+          type: 'doc',
+          id: 'input_telegram_id', 
+          label: 'How to Input Telegram ID',
+        },{
+          type: 'doc',
+          id: 'modifying_telegram_message', 
+          label: 'How to Modify Telegram Message',
+        },
+      ],
     },
   ],
 };
