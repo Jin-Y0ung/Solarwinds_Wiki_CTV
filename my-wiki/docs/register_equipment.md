@@ -2,7 +2,7 @@
 id: register_equipment
 title: How to Register Equipment
 slug: /register_equipment
--
+---
 
 ### **How to Register Equipment**  
 
