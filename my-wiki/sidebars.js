@@ -109,7 +109,7 @@ const sidebars = {
         {
           type: 'doc',
           id: 'open_groupchat_obtain_id', 
-          label: 'How to Open a Group Chat & Obtain Chat IDy',
+          label: 'How to Open a Group Chat & Obtain Chat ID',
         },{
           type: 'doc',
           id: 'input_telegram_id', 
