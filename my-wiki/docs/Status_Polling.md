@@ -1,9 +1,9 @@
 ---
-id: polling_interval
-title: Polling Interval Settings
-slug: /polling_interval
+id: status_polling
+title: Status Polling Interval Settings
+slug: /status_polling
 ---
-### **Polling Interval Settings Guide**  
+### **Status Polling Interval Setup**  
 
 #### **1. Navigate to Polling Settings**
 ![polling](\polling_interval\1.png)

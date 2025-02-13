@@ -37,8 +37,13 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'polling_interval', // 예시 문서 (원하는 문서 추가 가능)
-          label: 'Polling Interval Settings',
+          id: 'status_polling', // 예시 문서 (원하는 문서 추가 가능)
+          label: 'Status Polling Interval Settings',
+        },
+        {
+          type: 'doc',
+          id: 'Individual_Polling', // 예시 문서 (원하는 문서 추가 가능)
+          label: 'Individual Node Polling Interval Settings',
         },
       ],
     },
