@@ -1,62 +1,64 @@
 import React from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import Layout from '@theme/Layout';
+import styles from './index.module.css';
 
-const FeatureList = [
-  {
-    title: 'Comprehensive Documentation',
-    Svg: require('@site/static/img/documentation.svg').default,
-    description: (
-      <>
-        Find all the essential guides, CLI references, and troubleshooting steps for Solarwinds products.
-      </>
-    ),
-  },
-  {
-    title: 'Efficient Workflow',
-    Svg: require('@site/static/img/workflow.svg').default,
-    description: (
-      <>
-        Streamline your workflow with detailed documentation on project management, client handling, and automated reports.
-      </>
-    ),
-  },
-  {
-    title: 'Community-Driven',
-    Svg: require('@site/static/img/community.svg').default,
-    description: (
-      <>
-        Contribute to the wiki, share insights, and improve documentation for everyone in the Solarwinds ecosystem.
-      </>
-    ),
-  },
-];
-
-function Feature({ Svg, title, description }) {
+export default function Home() {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        {Svg && <Svg className={styles.featureSvg} role="img" />}
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
-export default function HomepageFeatures() {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+    <Layout title="Solarwinds Wiki" description="Your go-to resource for Solarwinds documentation.">
+      <div className={styles.heroBanner}>
+        <div className={styles.container}>
+          <h1 className={styles.title}>Welcome to Solarwinds Wiki</h1>
+          <p className={styles.subtitle}>Your go-to resource for Solarwinds documentation.</p>
         </div>
       </div>
-    </section>
+
+      {/* 📌 버튼 섹션만 남김 */}
+      <div className={styles.buttonContainer}>
+        {/* 🔥 최상단 버튼 - Qcell Web Wiki */}
+        <a href="https://jin-y0ung.github.io/Solarwinds_Wiki_CTV/docs/intro" className={styles.primaryButton} target="_blank" rel="noopener noreferrer">
+          🔥 Qcell Focused Web Wiki
+        </a>
+
+        {/* 📚 Solarwinds 공식 문서 */}
+        <a href="https://documentation.solarwinds.com/" className={styles.mainButton} target="_blank" rel="noopener noreferrer">
+          📚 Online Documentations for Solarwinds
+        </a>
+
+        {/* 🎯 NPM 관련 문서 */}
+        <a href="https://documentation.solarwinds.com/archive/pdf/npm/NPM_Getting_Started_Guide_1_Get_Started.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          🚀 NPM Getting Started Guide
+        </a>
+        <a href="https://documentation.solarwinds.com/archive/pdf/npm/NPM_Getting_Started_Guide_2_Customize.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          🎨 NPM Getting Started - Customize
+        </a>
+        <a href="https://documentation.solarwinds.com/archive/pdf/npm/NPM_Administrator_Guide.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          📖 NPM Administrator Guide
+        </a>
+
+        {/* 🎯 SAM 관련 문서 */}
+        <a href="https://documentation.solarwinds.com/archive/pdf/SAM/SAM_Getting_Started_Guide.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          🚀 SAM Getting Started Guide
+        </a>
+        <a href="https://documentation.solarwinds.com/archive/pdf/SAM/SAM_Administrator_Guide.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          📖 SAM Administrator Guide
+        </a>
+
+        {/* 🎯 DPA 관련 문서 */}
+        <a href="https://documentation.solarwinds.com/archive/pdf/dpa/dpaadministratorguide.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          🚀 DPA Getting Started Guide
+        </a>
+        <a href="https://documentation.solarwinds.com/archive/pdf/dpa/dpaadministratorguide.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          📖 DPA Administrator Guide
+        </a>
+
+        {/* 🎯 Log Analyzer 관련 문서 */}
+        <a href="https://documentation.solarwinds.com/archive/pdf/LA/LA-Getting-Started-Guide.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          🛠 Log Analyzer Getting Started Guide
+        </a>
+        <a href="https://documentation.solarwinds.com/archive/pdf/la/LA-Admin-Guide.pdf" className={styles.button} target="_blank" rel="noopener noreferrer">
+          📑 Log Analyzer Administrator Guide
+        </a>
+      </div>
+    </Layout>
   );
 }

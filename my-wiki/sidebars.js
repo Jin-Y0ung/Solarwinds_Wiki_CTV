@@ -121,18 +121,6 @@ const sidebars = {
         },
       ],
     },
-    {
-      type: 'category',
-      label: 'Network Performance Monitor', // Installation과 같은 레벨의 큰 분류
-      collapsed: false,
-      items: [
-        {
-          type: 'doc',
-          id: 'npm_getting_started', 
-          label: 'NPM Getting Started',
-        },
-      ],
-    },
   ],
 };
 
