@@ -130,14 +130,6 @@ const sidebars = {
           type: 'doc',
           id: 'npm_getting_started', 
           label: 'NPM Getting Started',
-        },{
-          type: 'doc',
-          id: 'add_discovered_devices_npm', 
-          label: 'Add Discovered Devices to NPM',
-        },{
-          type: 'doc',
-          id: 'modifying_telegram_message', 
-          label: 'How to Modify Telegram Message',
         },
       ],
     },
