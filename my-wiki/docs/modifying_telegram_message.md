@@ -44,5 +44,14 @@ This section explains how to **modify the Telegram notification message** in a S
 
 ---
 
-## **6. Save the Changes**  
+## **6. Grant Permission to Execute New Alert Actions**  
+![modifying_telegram_message](\modifying_telegram_message\8.png)  
+1. Open **Database Manager**.  
+2. Locate the **red box section** where execution permissions are granted.  
+3. Click **"Add Approval"**.  
+4. Check the **blank box** under **"Approved"** to grant permission for executing the new alert action.  
+
+---
+
+## **7. Save the Changes**  
 - Click **"Save"** to apply the modifications.

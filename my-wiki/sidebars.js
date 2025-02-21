@@ -96,7 +96,7 @@ const sidebars = {
           label: 'Create Monitoring User Automatically',
         },{
           type: 'doc',
-          id: 'create_monitoring_user_manual', 
+          id: 'create_monitoring_user_manual',  
           label: 'Manually Creating a Monitoring User',
         },
       ],
@@ -114,6 +114,26 @@ const sidebars = {
           type: 'doc',
           id: 'input_telegram_id', 
           label: 'How to Input Telegram ID',
+        },{
+          type: 'doc',
+          id: 'modifying_telegram_message', 
+          label: 'How to Modify Telegram Message',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Network Performance Monitor', // Installation과 같은 레벨의 큰 분류
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'npm_getting_started', 
+          label: 'NPM Getting Started',
+        },{
+          type: 'doc',
+          id: 'add_discovered_devices_npm', 
+          label: 'Add Discovered Devices to NPM',
         },{
           type: 'doc',
           id: 'modifying_telegram_message', 
