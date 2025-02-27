@@ -1,14 +1,15 @@
-/* ✅ 배너 완벽 복구 */
+/* ✅ 배너 */
 .heroBanner {
   background: linear-gradient(to right, #A1E2B7, #00c6c1, #0095d6, #0228A0);
   color: white;
   padding: 50px 20px;
   text-align: center;
-  display: block !important; /* 강제 표시 */
+  display: block !important;
   width: 100%;
-  height: auto; /* 높이 문제 해결 */
-  overflow: visible; /* 숨겨지지 않도록 */
-  position: relative; /* 부모 요소가 잘못된 위치에 있는 경우 복구 */
+  height: auto;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 40px; /* 배너 아래 간격 */
 }
 
 /* ✅ 컨테이너 설정 */
@@ -18,62 +19,52 @@
   text-align: center;
 }
 
-/* ✅ 버튼 섹션 (센터 정렬 유지) */
-.mainButtonContainer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
 /* 🔥 최상단 버튼 - Qcell Focused Web Wiki */
-.primaryButton {
-  background-color: #ff5722;
-  color: white;
-  padding: 18px 35px;
-  font-size: 22px;
+.primaryButton, .mainButton {
+  display: block;
+  width: 60%;
+  text-align: center;
   font-weight: bold;
   border-radius: 10px;
   text-decoration: none;
-  transition: background-color 0.3s;
-  width: 60%; 
-  text-align: center;
-  display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px auto; /* 버튼 간격 */
+  padding: 18px 30px;
+}
+
+.primaryButton {
+  background-color: #ff5722;
+  color: white;
+  font-size: 22px;
 }
 
 .primaryButton:hover {
   background-color: #e64a19;
 }
 
-/* 📚 메인 버튼 - Solarwinds 공식 문서 */
 .mainButton {
   background-color: #ff9800;
   color: white;
-  padding: 18px 30px;
   font-size: 20px;
-  font-weight: bold;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  width: 60%;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
 }
 
 .mainButton:hover {
   background-color: #e68900;
 }
 
-/* 🟦 버튼들을 2열로 정렬 */
+/* 🏷️ 🔥 헤더 & 버튼 그룹 컨테이너 */
+.section {
+  margin-bottom: 30px; /* 각 헤더 + 버튼 그룹 간격 */
+}
+
+/* 🟦 버튼 그룹 */
 .buttonContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 버튼 개수에 따라 자동 정렬 */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 버튼 개수에 따라 자동 정렬 */
   gap: 15px;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  max-width: 700px;
+  margin-top: 15px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -92,6 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50px;
 }
 
 .button:hover {
@@ -100,17 +92,19 @@
 
 /* 🏁 푸터와 버튼 사이 간격 추가 */
 .footerSpacing {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
-/* 📌 제목과 버튼 사이 간격 추가 */
+/* 📌 헤더 스타일 */
 h3 {
-  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 /* 🎯 모바일에서도 정렬 유지 */
 @media (max-width: 768px) {
   .buttonContainer {
-    grid-template-columns: repeat(1, 1fr); /* 모바일에서는 1열 */
+    grid-template-columns: repeat(1, 1fr);
   }
 }
