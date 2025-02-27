@@ -73,6 +73,9 @@ export default function Home() {
   </a>
 </div>
 
+{/* 🏁 버튼과 푸터 사이 공백 추가 */}
+<div className={styles.footerSpacing}></div>
+
 </main>
 </Layout>
 );
